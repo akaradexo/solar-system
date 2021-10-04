@@ -65,6 +65,8 @@ img{
   width: 100%;
   max-width: 100%;
   display:block;
+  margin: 1rem;
+
 }
 
 .form{
