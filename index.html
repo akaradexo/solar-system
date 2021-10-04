@@ -17,9 +17,9 @@
   <div class="container">
     <h1>Calculate a weight of an object on the planet</h1>
     <form class="form">
-      <input type="text" placeholder="Mass in kg" id="mass">
-      <select name="" id="">
-        <option value="unknown">Select the planet</option>
+      <input type="number" placeholder="Mass in kg" id="mass">
+      <select id="planet">
+        <option value="unknown" >Select the planet</option>
         <option value="earth">Earth</option>
         <option value="jupiter">Jupiter</option>
         <option value="mars">Mars</option>
@@ -33,13 +33,11 @@
       </select>
       <button class="button-31" type="submit"> Calculate</button>
     </form>
-
-    <div class="screen">
-      <img src="./assests/images/unknown.png" alt="">
-      <!-- <div class="info">
-        <h2>The weight of an object on EARTH </h2>
-        <span><h1>892.00N</h1></span>
-      </div> -->
+    <div class="errorMessage" id="errorMessage">
+    </div>
+    <div class="screen" id="displayScreen">
+      <div class="img" id="displayPlanet"></div>
+      <div class="info" id="displayInfo"></div>
     </div>
 
   </div>
@@ -47,5 +45,5 @@
 
 </body>
   
-<script src="./script/script.js"></script>
+<script src="./scripts/script.js"></script>
 </html>
